@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Tables</title>
+
+<body>
+
+  <h1>Testing tables with many elements in cells</h1>
+
+  <h2>Simple grid</h2>
+  <div role="grid" aria-label="Simple grid">
+    <div role="row">
+      <div role="gridcell">
+        <span>Some span 1 a</span>
+        <span>Some span 1 b</span>
+        <button>Some button 1</button>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell">
+        <span>Some span 2 a</span>
+        <span>Some span 2 b</span>
+        <button>Some button 2</button>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell">
+        <span>Some span 3 a</span>
+        <span>Some span 3 b</span>
+        <button>Some button 3</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Grid with labels on cells</h2>
+  <div role="grid" aria-label="Grid with labels on cells">
+    <div role="row">
+      <div role="gridcell" aria-label="Label 1">
+        <span>Some span 1 a</span>
+        <span>Some span 1 b</span>
+        <button>Some button 1</button>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell" aria-label="Label 2">
+        <span>Some span 2 a</span>
+        <span>Some span 2 b</span>
+        <button>Some button 2</button>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell" aria-label="Label 3">
+        <span>Some span 3 a</span>
+        <span>Some span 3 b</span>
+        <button>Some button 3</button>
+      </div>
+    </div>
+  </div>
+
+  <h2>Grid with labels div wrapper on cells</h2>
+  <div role="grid" aria-label="Grid with labels div wrapper on cells">
+    <div role="row">
+      <div role="gridcell">
+        <div tabindex="0" aria-label="Label 1">
+          <span>Some span 1 a</span>
+          <span>Some span 1 b</span>
+          <button>Some button 1</button>
+        </div>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell">
+        <div tabindex="0" aria-label="Label 2">
+          <span>Some span 2 a</span>
+          <span>Some span 2 b</span>
+          <button>Some button 2</button>
+        </div>
+      </div>
+    </div>
+    <div role="row">
+      <div role="gridcell">
+        <div tabindex="0" aria-label="Label 3">
+          <span>Some span 3 a</span>
+          <span>Some span 3 b</span>
+          <button>Some button 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Table</h2>
+  <table aria-label="Simple table">
+    <tbody>
+      <tr>
+        <th>Row 1</th>
+        <td><span>Some span 1 a</span>
+          <span>Some span 1 b</span>
+          <button>Some button 1</button>
+        </td>
+        <td>One</td>
+      </tr>
+      <tr>
+        <th>Row 2</th>
+        <td><span>Some span 2 a</span>
+          <span>Some span 2 b</span>
+          <button>Some button 2</button>
+        </td>
+        <td>Two</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Row 3</th>
+        <td><span>Some span 3 a</span>
+          <span>Some span 3 b</span>
+          <button>Some button 3</button>
+        </td>
+        <td>Three</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+
+</html>
